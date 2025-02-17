@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 44 33% 97%;
+    --foreground: 197 37% 24%;
+    --card: 0 0% 100%;
+    --card-foreground: 197 37% 24%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 197 37% 24%;
+    --primary: 142 14% 59%;
+    --primary-foreground: 44 33% 97%;
+    --secondary: 48 9% 40%;
+    --secondary-foreground: 44 33% 97%;
+    --muted: 80 14% 79%;
+    --muted-foreground: 197 37% 24%;
+    --accent: 51 10% 60%;
+    --accent-foreground: 197 37% 24%;
+    --destructive: 0 35% 50%;
+    --destructive-foreground: 44 33% 97%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 142 14% 59%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
